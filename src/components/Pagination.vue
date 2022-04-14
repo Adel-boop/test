@@ -6,6 +6,7 @@
           class="border-2 p-2 rounded-lg border-sky-300"
           @click.prevent="goPrevious"
           :class="{ disabled: isValueFirst }"
+          data-testid="pagination-prev-button"
         >
           Назад
         </a>
@@ -24,6 +25,7 @@
           class="border-2 p-2 rounded-lg border-sky-300"
           @click.prevent="$emit('input', item)"
           :class="{ active: item === value }"
+          data-testid="pagination-item"
         >
           {{ item }}
         </a>
@@ -34,6 +36,7 @@
           class="border-2 p-2  rounded-lg border-sky-300"
           @click.prevent="goNext"
           :class="{ disabled: isValueLast }"
+          data-testid="pagination-next-button"
         >
           Вперёд
         </a>

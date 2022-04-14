@@ -6,17 +6,20 @@
         type="text"
         :value="name"
         @input="changeName($event.target.value)"
+        data-testid="search-input"
     >
     <button
         class="rounded-r-lg bg-sky-300 border-2 border-sky-300 p-2"
         @click="search"
         :disabled="!name.length"
+        data-testid="search-button"
     >
       поиск
     </button>
     <button
         class="rounded bg-sky-300 border-2 border-sky-300 p-2 m-2"
         @click="reset"
+        data-testid="search-reset"
     >
       сброс
     </button>

@@ -18,6 +18,7 @@
                         <button 
                             class="btn-close box-content p-1 text-black border-none rounded-none opacity-50 focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
                             @click="closeInfo"
+                            
                         >
                             Закрыть
                         </button>
